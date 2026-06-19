@@ -1,2 +1,5 @@
-@import url("./base.css");
-@import url("./components.css");
+@import url("./foundation.css");
+@import url("./public.css");
+@import url("./sections.css");
+@import url("./portal.css");
+@import url("./responsive.css");
