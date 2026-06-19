@@ -62,9 +62,9 @@
             </div>
             <form class="inline-form" action="./downloads/deposit-receipt.txt">
               <label for="deposit-amount">Deposit amount</label>
-              <input id="deposit-amount" type="number" value="480.00" step="0.01" readonly />
+              <input id="deposit-amount" name="depositAmount" type="number" value="480.00" step="0.01" readonly />
               <label for="payment-method">Payment method</label>
-              <select id="payment-method">
+              <select id="payment-method" name="paymentMethod">
                 <option>Visa ending in 1042</option>
                 <option>Mastercard ending in 4471</option>
                 <option>Bank transfer</option>
@@ -91,7 +91,7 @@
             </div>
             <form class="inline-form" action="./owner.html#files">
               <label for="owner-photo-upload">Choose photos to upload</label>
-              <input id="owner-photo-upload" type="file" multiple />
+              <input id="owner-photo-upload" name="ownerPhotos" type="file" accept="image/*" multiple />
               <button type="submit">Upload selected photos</button>
             </form>
             <div class="upload-actions">
