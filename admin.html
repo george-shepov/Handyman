@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handyman Admin Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="./index.html">Handyman Project Hub</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./owner.html">Owner portal</a>
+          <a class="button primary" href="./admin.html">Admin dashboard</a>
+        </nav>
+      </header>
+
+      <main class="dashboard">
+        <div class="dashboard-head">
+          <div>
+            <span class="eyebrow">Admin front page</span>
+            <h1>Customer management and scheduling at a glance.</h1>
+            <p>
+              This page focuses on the office workflow: customers, appointments,
+              deposits, consumables, and photo management.
+            </p>
+          </div>
+          <div class="stat-list">
+            <div class="stat"><strong>12</strong> Active customers</div>
+            <div class="stat"><strong>5</strong> Scheduled visits</div>
+            <div class="stat"><strong>3</strong> Deposit requests</div>
+          </div>
+        </div>
+
+        <section class="panel-grid">
+          <article class="table-card">
+            <h2>Customers</h2>
+            <p>Recent jobs with the next required action.</p>
+            <div class="customer-table" role="table" aria-label="Customer list">
+              <div class="customer-row" role="row">
+                <div><strong>Mia Reynolds</strong> Kitchen backsplash refresh</div>
+                <div>Deposit requested</div>
+                <div>Photos pending</div>
+              </div>
+              <div class="customer-row" role="row">
+                <div><strong>Derek Foster</strong> Fence repair and stain</div>
+                <div>Visit tomorrow</div>
+                <div>Estimate sent</div>
+              </div>
+              <div class="customer-row" role="row">
+                <div><strong>Naomi Price</strong> Bathroom fixture replacement</div>
+                <div>Ready to invoice</div>
+                <div>Receipt ready</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-card">
+            <h2>Appointment scheduling</h2>
+            <p>Open slots for dispatch and follow-up calls.</p>
+            <ul class="timeline">
+              <li class="timeline-item">
+                <time>08:30 AM</time>
+                <strong>Measure for custom shelving</strong>
+                <p>Assigned to Crew A · confirm consumables list after site visit.</p>
+              </li>
+              <li class="timeline-item">
+                <time>11:00 AM</time>
+                <strong>Deck board replacement</strong>
+                <p>Owner pre-paid materials · arrival reminder already sent.</p>
+              </li>
+              <li class="timeline-item">
+                <time>02:15 PM</time>
+                <strong>Cabinet hardware install</strong>
+                <p>Needs before/after photo upload once work is complete.</p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="summary-card">
+            <h2>Job controls</h2>
+            <ul class="detail-list">
+              <li>Generate and resend estimates</li>
+              <li>Request and record pre-payments</li>
+              <li>Track consumables by category and cost</li>
+              <li>Upload progress photos for owner download</li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
