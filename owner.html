@@ -60,9 +60,21 @@
               <strong>Consumables</strong>
               <p>Deck screws, stain brushes, sanding pads, painter's tape</p>
             </div>
+            <form class="inline-form">
+              <label for="deposit-amount">Deposit amount</label>
+              <input id="deposit-amount" type="text" value="$480.00" />
+              <label for="payment-method">Payment method</label>
+              <select id="payment-method">
+                <option>Visa ending in 1042</option>
+                <option>Mastercard ending in 4471</option>
+                <option>Bank transfer</option>
+              </select>
+              <button type="button">Submit pre-payment</button>
+            </form>
             <div class="upload-actions">
-              <a class="button primary" href="./owner.html">Pay deposit</a>
-              <a class="button secondary" href="./owner.html">Download estimate</a>
+              <a class="button secondary" href="./downloads/estimate-summary.txt" download
+                >Download estimate</a
+              >
             </div>
           </article>
 
@@ -77,19 +89,25 @@
               <strong>Design inspiration</strong>
               <p>Add examples of stain color, trim, or fixture preferences.</p>
             </div>
+            <form class="inline-form">
+              <label for="owner-photo-upload">Choose photos to upload</label>
+              <input id="owner-photo-upload" type="file" multiple />
+              <button type="button">Upload selected photos</button>
+            </form>
             <div class="upload-actions">
-              <a class="button primary" href="./owner.html">Upload photos</a>
-              <a class="button secondary" href="./owner.html">Download work photos</a>
+              <a class="button secondary" href="./downloads/work-photo-list.txt" download
+                >Download work photos</a
+              >
             </div>
           </article>
 
           <article class="summary-card">
             <h2>Project downloads</h2>
             <ul class="detail-list">
-              <li>Latest estimate PDF</li>
-              <li>Paid deposit receipt</li>
-              <li>Completion invoice and final receipt</li>
-              <li>Admin-uploaded progress photo archive</li>
+              <li><a href="./downloads/estimate-summary.txt" download>Latest estimate</a></li>
+              <li><a href="./downloads/deposit-receipt.txt" download>Paid deposit receipt</a></li>
+              <li><a href="./downloads/final-receipt.txt" download>Completion receipt</a></li>
+              <li><a href="./downloads/work-photo-list.txt" download>Progress photo archive</a></li>
             </ul>
           </article>
         </section>

@@ -1,0 +1,4 @@
+Deposit Receipt
+Customer: Deck repair and stain refresh
+Amount received: $480.00
+Status: Paid in advance
