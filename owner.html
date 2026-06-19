@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handyman Owner Portal</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="./index.html">Handyman Project Hub</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./admin.html">Admin dashboard</a>
+          <a class="button primary" href="./owner.html">Owner portal</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="stack">
+            <div>
+              <span class="eyebrow">Owner front page</span>
+              <h1>Pay, upload, and download everything tied to your project.</h1>
+            </div>
+            <p>
+              The owner portal keeps payments, consumables, project images, estimates,
+              and receipts in one place.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#payments">Review pre-pay</a>
+              <a class="button secondary" href="#files">See project files</a>
+            </div>
+          </div>
+
+          <aside class="dashboard-visual" aria-label="Owner summary">
+            <div class="mini-card">
+              <span class="status">Current project</span>
+              <strong>Deck repair and stain refresh</strong>
+              <p>Next visit scheduled for Tuesday at 11:00 AM.</p>
+            </div>
+            <div class="mini-card">
+              <span class="status">Balance overview</span>
+              <strong>$480 deposit due</strong>
+              <p>Labor, consumables, and permit pickup are itemized below.</p>
+            </div>
+          </aside>
+        </section>
+
+        <section class="portal-grid" id="payments">
+          <article class="receipt-card">
+            <h2>Pre-pay for your project</h2>
+            <p>Review charges before the team begins ordering materials.</p>
+            <div class="receipt-row">
+              <strong>Deposit request</strong>
+              <p>$350 labor hold + $130 consumables allowance</p>
+            </div>
+            <div class="receipt-row">
+              <strong>Consumables</strong>
+              <p>Deck screws, stain brushes, sanding pads, painter's tape</p>
+            </div>
+            <form class="inline-form" action="./downloads/deposit-receipt.txt">
+              <label for="deposit-amount">Deposit amount</label>
+              <input id="deposit-amount" type="number" value="480.00" step="0.01" readonly />
+              <label for="payment-method">Payment method</label>
+              <select id="payment-method">
+                <option>Visa ending in 1042</option>
+                <option>Mastercard ending in 4471</option>
+                <option>Bank transfer</option>
+              </select>
+              <button type="submit">Submit pre-payment</button>
+            </form>
+            <div class="upload-actions">
+              <a class="button secondary" href="./downloads/estimate-summary.txt" download
+                >Download estimate</a
+              >
+            </div>
+          </article>
+
+          <article class="upload-card" id="files">
+            <h2>Upload your project photos</h2>
+            <p>Share inspiration images, damage photos, or access notes.</p>
+            <div class="upload-row">
+              <strong>Before-work photos</strong>
+              <p>Upload shots of boards, railings, and gate hardware.</p>
+            </div>
+            <div class="upload-row">
+              <strong>Design inspiration</strong>
+              <p>Add examples of stain color, trim, or fixture preferences.</p>
+            </div>
+            <form class="inline-form" action="./owner.html#files">
+              <label for="owner-photo-upload">Choose photos to upload</label>
+              <input id="owner-photo-upload" type="file" multiple />
+              <button type="submit">Upload selected photos</button>
+            </form>
+            <div class="upload-actions">
+              <a class="button secondary" href="./downloads/work-photo-list.txt" download
+                >Download work photos</a
+              >
+            </div>
+          </article>
+
+          <article class="summary-card">
+            <h2>Project downloads</h2>
+            <ul class="detail-list">
+              <li><a href="./downloads/estimate-summary.txt" download>Latest estimate</a></li>
+              <li><a href="./downloads/deposit-receipt.txt" download>Paid deposit receipt</a></li>
+              <li><a href="./downloads/final-receipt.txt" download>Completion receipt</a></li>
+              <li><a href="./downloads/work-photo-list.txt" download>Progress photo archive</a></li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
